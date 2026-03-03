@@ -13,6 +13,7 @@ import com.pt.R;
 
 public class CodeView extends LinearLayout {
     private PaintText paintText;
+	Context ct;
 
     // Keywords de Java
     private final String[] keywords = {
@@ -44,6 +45,7 @@ public class CodeView extends LinearLayout {
 
     public CodeView(Context ctx) {
         super(ctx);
+		ct = ctx;
         setOrientation(HORIZONTAL);
         setBackgroundColor(0xFF151B23); // Fondo oscuro
         setPadding(8, 8, 8, 8);
@@ -132,4 +134,15 @@ public class CodeView extends LinearLayout {
         paintText.setText(text);
         paintText.draw();
     }
+	
+	public void setSize(int size) {
+		paintText.setTextSize(dpToPx(size).floatValue());
+	}
+	
+	public Number dpToPx(int t) {
+		int dp = t;
+        float scale = ct.getResources().getDisplayMetrics().density;
+        Number px = (int) (dp * scale + 0.5f);
+		return px;
+	}
 }
