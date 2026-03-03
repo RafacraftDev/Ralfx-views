@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import com.pt.R;
+import android.graphics.Typeface;
 
 public class CodeView extends LinearLayout {
     private PaintText paintText;
@@ -45,6 +46,9 @@ public class CodeView extends LinearLayout {
 
     public CodeView(Context ctx) {
         super(ctx);
+		Typeface ttf = Typeface.createFromAsset(ctx.getAssets(), "fonts/JetBrainsMono-Regular.ttf");
+		paintText.setTypeface(ttf);
+		
 		ct = ctx;
         setOrientation(HORIZONTAL);
         setBackgroundColor(0xFF151B23); // Fondo oscuro
