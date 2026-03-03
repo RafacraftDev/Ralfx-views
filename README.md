@@ -48,7 +48,7 @@ codeView.setText(
 - Kotlin or Java compatible with AndroidX
 - API 21+
 # 📁 Structure
-```
+```py
 ralfx/view/
 │
 ├─ PaintText.java       # TextView with syntax highlighting
