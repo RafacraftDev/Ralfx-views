@@ -1,6 +1,7 @@
 # 🚀 PaintText:
 ![GitHub stars](https://img.shields.io/github/stars/RafacraftDev/PaintText-in-java)
 ![License: MIT](https://img.shields.io/github/license/RafacraftDev/PaintText-in-java)
+
 `PaintText` is an advanced type of TextView that allows you to color words, phrases, or patterns using literal words or regular expressions (regex). It also allows you to assign text color and background color. 
 
 ---
