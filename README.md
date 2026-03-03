@@ -32,6 +32,10 @@ codeView.setText(
     "}"
 );
 ```
+### CodeView Preview
+<img width="1080" height="295" alt="1000254013" src="https://github.com/user-attachments/assets/7859dbe0-1c23-4047-ad8f-ba4eb1cc5100" />
+
+
 - Vertical and horizontal scroll: allows viewing long code without problems.
 - Copy button: quickly copy code lines.
 - GitHub-style highlighting: keywords, numbers, strings (blue), comments, and methods.
