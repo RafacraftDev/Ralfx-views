@@ -46,6 +46,7 @@ public class CodeView extends LinearLayout {
 
     public CodeView(Context ctx) {
         super(ctx);
+		paintText = new PaintText(ctx);
 		Typeface ttf = Typeface.createFromAsset(ctx.getAssets(), "fonts/JetBrainsMono-Regular.ttf");
 		paintText.setTypeface(ttf);
 		
@@ -54,8 +55,6 @@ public class CodeView extends LinearLayout {
         setBackgroundColor(0xFF151B23); // Fondo oscuro
         setPadding(8, 8, 8, 8);
         setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
-
-        paintText = new PaintText(ctx);
 
         // Resaltar keywords
         for (String keyword : keywords) {
